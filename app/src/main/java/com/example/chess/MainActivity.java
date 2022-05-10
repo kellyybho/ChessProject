@@ -1394,12 +1394,12 @@ public class MainActivity extends AppCompatActivity {
                         }
                         Log.d("ERROR", "check 1");
                         if(j-1>=0 && k+1<8 && board[j-1][k+1].getTag()!=null && board[j-1][k+1].getTag().toString().contains("_b")) { //up left
-                            capturingArray[j - 1][k + 1]++;
+                            //capturingArray[j - 1][k + 1]++;
                             checkmateHelper(j-1, k+1, j, k, 0, sideColor);
                         }
                         Log.d("ERROR", "check 2");
                         if(k-1>=0 && board[j][k-1].getTag()==null) { //forward blocking
-                            capturingArray[j][k - 1]++;
+                            //capturingArray[j][k - 1]++;
                             checkmateHelper(j, k+1, j, k, 1, sideColor);
                         }
                         Log.d("ERROR", "finished white pawn check");
@@ -1412,7 +1412,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
+        return true;
     }
 
     public void reverseMove(int j, int k, int newJ, int newK, Object originalTag, Object newTag){
