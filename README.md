@@ -1,6 +1,7 @@
 # ChessProject
 a very messy semi-working chess app
 
+I made this on android studio
 use a emulator to make it work. 
 I use Pixel_3a_API-30_x86 
 any similar sized one should work
